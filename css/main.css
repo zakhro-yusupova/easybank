@@ -458,14 +458,21 @@ img {
   letter-spacing: -0.107692px;
   color: #9597A5;
   text-decoration: none;
+  text-align: center;
+  padding: 15px 5px;
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
+  position: relative;
 }
 
-.site-header__item-link:hover {
-  color: #2D314D;
-}
-
-.site-header__item-link:active {
-  color: #2D314D;
+.site-header__item-link:hover::before {
+  content: "";
+  position: absolute;
+  width: 51px;
+  height: 4px;
+  background-image: url("../../images/border-bottom.png");
+  background-repeat: no-repeat;
+  top: 50px;
 }
 
 .link {

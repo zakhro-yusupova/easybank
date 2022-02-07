@@ -27,20 +27,30 @@
   margin-right: 30px;
 }
 
+
+
+
 .site-header__item-link{
   font-size: 14px;
   line-height: 16px;
   letter-spacing: -0.107692px;
   color: $main-text-color;
   text-decoration: none;
+  text-align: center;
+  padding: 15px 5px;
+  transition: 1s ease;
+  position: relative;
 
-  &:hover{
-    color: $main-title-color;
-  }
 
-  &:active{
-    color: $main-title-color;
-  }
+&:hover::before{
+  content: "";
+  position: absolute;
+  width: 51px;
+  height: 4px;
+  background-image: url("../../images/border-bottom.png");
+  background-repeat: no-repeat;
+  top: 50px;
+}
 }
 
 .link{
@@ -72,9 +82,9 @@
 @media only  screen and (max-width: 426px){
 
 
-.site-header{
-  padding: 26px 0;
-}
+  .site-header{
+    padding: 26px 0;
+  }
   .site-header__menu{
     display: none;
   }
