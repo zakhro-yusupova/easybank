@@ -12,10 +12,11 @@ html {
 
 
 body {
+	position: relative;
 	font-family: 'Public Sans';
 	margin: 0;
 	padding: 0;
-
+	overflow-x: hidden;
 }
 
 img {
